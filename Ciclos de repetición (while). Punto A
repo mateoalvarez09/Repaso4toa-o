@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int secreto = 67; 
+    int intento;
+
+    cout << "Adivina el numero: ";
+    cin >> intento;
+
+    while(intento != secreto) {
+
+        if(intento < secreto) {
+            cout << "El numero es mayor" << endl;
+        }
+        else {
+            cout << "El numero es menor" << endl;
+        }
+
+        cout << "Otra vez ameo: ";
+        cin >> intento;
+    }
+
+    cout << "Le atinaste ameo." << endl;
+
+    return 0;
+}
