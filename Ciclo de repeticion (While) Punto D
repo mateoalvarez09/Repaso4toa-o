@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int corredor1 = 0;
+    int corredor2 = 0;
+    int segundos = 0;
+
+    int avance1 = 3;
+    int avance2 = 4;
+
+    while(corredor1 < 50 && corredor2 < 50) {
+
+        corredor1 = corredor1 + avance1;
+        corredor2 = corredor2 + avance2;
+        segundos = segundos + 1;
+
+        cout << "Segundo " << segundos << endl;
+        cout << "Corredor 1: " << corredor1 << " metros" << endl;
+        cout << "Corredor 2: " << corredor2 << " metros" << endl;
+        cout << endl;
+    }
+
+    if(corredor1 >= 50 && corredor2 >= 50) {
+        cout << "Empate!" << endl;
+    }
+    else if(corredor1 >= 50) {
+        cout << "Gano el corredor 1 en " << segundos << " segundos" << endl;
+    }
+    else {
+        cout << "Gano el corredor 2 en " << segundos << " segundos" << endl;
+    }
+
+    return 0;
+}
