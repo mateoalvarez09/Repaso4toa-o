@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+
+    string texto;
+    char letra;
+    int i = 0, contador = 0;
+
+    cout << "ingresa una palabra: ";
+    cin >> texto;
+
+    cout << "ingresa la letra a buscar: ";
+    cin >> letra;
+
+    while(i < texto.length()) {
+
+        if(texto[i] == letra) {
+            contador = contador + 1;
+        }
+
+        i = i + 1;
+    }
+
+    cout << "la letra aparece " << contador << " veces." << endl;
+
+    return 0;
+}
